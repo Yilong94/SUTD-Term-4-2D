@@ -1,0 +1,408 @@
+BC1.1
+B0 := ODD(b0,OP0);
+S0 := ODD(A0,B0,OP0);
+C1 := OR(AND(A0,B0),AND(OP0,A0),AND(OP0,B0));
+
+B1 := ODD(b1,OP0);
+S1 := ODD(A1,B1,C1);
+C2 := OR(AND(A1,B1),AND(C1,A1),AND(C1,B1));
+
+B2 := ODD(b2,OP0);
+S2 := ODD(A2,B2,C2);
+C3 := OR(AND(A2,B2),AND(C2,A2),AND(C2,B2));
+
+B3 := ODD(b3,OP0);
+S3 := ODD(A3,B3,C3);
+C4 := OR(AND(A3,B3),AND(C3,A3),AND(C3,B3));
+
+B4 := ODD(b4,OP0);
+S4 := ODD(A4,B4,C4);
+C5 := OR(AND(A4,B4),AND(C4,A4),AND(C4,B4));
+
+B5 := ODD(b5,OP0);
+S5 := ODD(A5,B5,C5);
+C6 := OR(AND(A5,B5),AND(C5,A5),AND(C5,B5));
+
+B6 := ODD(b6,OP0);
+S6 := ODD(A6,B6,C6);
+C7 := OR(AND(A6,B6),AND(C6,A6),AND(C6,B6));
+
+B7 := ODD(b7,OP0);
+S7 := ODD(A7,B7,C7);
+C8 := OR(AND(A7,B7),AND(C7,A7),AND(C7,B7));
+
+B8 := ODD(b8,OP0);
+S8 := ODD(A8,B8,C8);
+C9 := OR(AND(A8,B8),AND(C8,A8),AND(C8,B8));
+
+B9 := ODD(b9,OP0);
+S9 := ODD(A9,B9,C9);
+C10 := OR(AND(A9,B9),AND(C9,A9),AND(C9,B9));
+
+B10 := ODD(b10,OP0);
+S10 := ODD(A10,B10,C10);
+C11 := OR(AND(A10,B10),AND(C10,A10),AND(C10,B10));
+
+B11 := ODD(b11,OP0);
+S11 := ODD(A11,B11,C11);
+C12 := OR(AND(A11,B11),AND(C11,A11),AND(C11,B11));
+
+B12 := ODD(b12,OP0);
+S12 := ODD(A12,B12,C12);
+C13 := OR(AND(A12,B12),AND(C12,A12),AND(C12,B12));
+
+B13 := ODD(b13,OP0);
+S13 := ODD(A13,B13,C13);
+C14 := OR(AND(A13,B13),AND(C13,A13),AND(C13,B13));
+
+B14 := ODD(b14,OP0);
+S14 := ODD(A14,B14,C14);
+C15 := OR(AND(A14,B14),AND(C14,A14),AND(C14,B14));
+
+B15 := ODD(b15,OP0);
+S15 := ODD(A15,B15,C15);
+C16 := OR(AND(A15,B15),AND(C15,A15),AND(C15,B15));
+
+B16 := ODD(b16,OP0);
+S16 := ODD(A16,B16,C16);
+C17 := OR(AND(A16,B16),AND(C16,A16),AND(C16,B16));
+
+B17 := ODD(b17,OP0);
+S17 := ODD(A17,B17,C17);
+C18 := OR(AND(A17,B17),AND(C17,A17),AND(C17,B17));
+
+B18 := ODD(b18,OP0);
+S18 := ODD(A18,B18,C18);
+C19 := OR(AND(A18,B18),AND(C18,A18),AND(C18,B18));
+
+B19 := ODD(b19,OP0);
+S19 := ODD(A19,B19,C19);
+C20 := OR(AND(A19,B19),AND(C19,A19),AND(C19,B19));
+
+B20 := ODD(b20,OP0);
+S20 := ODD(A20,B20,C20);
+C21 := OR(AND(A20,B20),AND(C20,A20),AND(C20,B20));
+
+B21 := ODD(b21,OP0);
+S21 := ODD(A21,B21,C21);
+C22 := OR(AND(A21,B21),AND(C21,A21),AND(C21,B21));
+
+B22 := ODD(b22,OP0);
+S22 := ODD(A22,B22,C22);
+C23 := OR(AND(A22,B22),AND(C22,A22),AND(C22,B22));
+
+B23 := ODD(b23,OP0);
+S23 := ODD(A23,B23,C23);
+C24 := OR(AND(A23,B23),AND(C23,A23),AND(C23,B23));
+
+B24 := ODD(b24,OP0);
+S24 := ODD(A24,B24,C24);
+C25 := OR(AND(A24,B24),AND(C24,A24),AND(C24,B24));
+
+B25 := ODD(b25,OP0);
+S25 := ODD(A25,B25,C25);
+C26 := OR(AND(A25,B25),AND(C25,A25),AND(C25,B25));
+
+B26 := ODD(b26,OP0);
+S26 := ODD(A26,B26,C26);
+C27 := OR(AND(A26,B26),AND(C26,A26),AND(C26,B26));
+
+B27 := ODD(b27,OP0);
+S27 := ODD(A27,B27,C27);
+C28 := OR(AND(A27,B27),AND(C27,A27),AND(C27,B27));
+
+B28 := ODD(b28,OP0);
+S28 := ODD(A28,B28,C28);
+C29 := OR(AND(A28,B28),AND(C28,A28),AND(C28,B28));
+
+B29 := ODD(b29,OP0);
+S29 := ODD(A29,B29,C29);
+C30 := OR(AND(A29,B29),AND(C29,A29),AND(C29,B29));
+
+B30 := ODD(b30,OP0);
+S30 := ODD(A30,B30,C30);
+C31 := OR(AND(A30,B30),AND(C30,A30),AND(C30,B30));
+
+B31 := ODD(b31,OP0);
+S31 := ODD(A31,B31,C31);
+C32 := OR(AND(A31,B31),AND(C31,A31),AND(C31,B31));
+
+
+
+
+
+
+P0_0 := NOT(NOT(OR(A0,B0)));
+G0_0 := NOT(NOT(AND(A0,B0)));
+S_optimized0 := ODD(A0,B0,C_optimized0);
+
+P0_1 := NOT(NOT(OR(A1,B1)));
+G0_1 := NOT(NOT(AND(A1,B1)));
+S_optimized1 := ODD(A1,B1,C_optimized1);
+
+P0_2 := NOT(NOT(OR(A2,B2)));
+G0_2 := NOT(NOT(AND(A2,B2)));
+S_optimized2 := ODD(A2,B2,C_optimized2);
+
+P0_3 := NOT(NOT(OR(A3,B3)));
+G0_3 := NOT(NOT(AND(A3,B3)));
+S_optimized3 := ODD(A3,B3,C_optimized3);
+
+P0_4 := NOT(NOT(OR(A4,B4)));
+G0_4 := NOT(NOT(AND(A4,B4)));
+S_optimized4 := ODD(A4,B4,C_optimized4);
+
+P0_5 := NOT(NOT(OR(A5,B5)));
+G0_5 := NOT(NOT(AND(A5,B5)));
+S_optimized5 := ODD(A5,B5,C_optimized5);
+
+P0_6 := NOT(NOT(OR(A6,B6)));
+G0_6 := NOT(NOT(AND(A6,B6)));
+S_optimized6 := ODD(A6,B6,C_optimized6);
+
+P0_7 := NOT(NOT(OR(A7,B7)));
+G0_7 := NOT(NOT(AND(A7,B7)));
+S_optimized7 := ODD(A7,B7,C_optimized7);
+
+P0_8 := NOT(NOT(OR(A8,B8)));
+G0_8 := NOT(NOT(AND(A8,B8)));
+S_optimized8 := ODD(A8,B8,C_optimized8);
+
+P0_9 := NOT(NOT(OR(A9,B9)));
+G0_9 := NOT(NOT(AND(A9,B9)));
+S_optimized9 := ODD(A9,B9,C_optimized9);
+
+P0_10 := NOT(NOT(OR(A10,B10)));
+G0_10 := NOT(NOT(AND(A10,B10)));
+S_optimized10 := ODD(A10,B10,C_optimized10);
+
+P0_11 := NOT(NOT(OR(A11,B11)));
+G0_11 := NOT(NOT(AND(A11,B11)));
+S_optimized11 := ODD(A11,B11,C_optimized11);
+
+P0_12 := NOT(NOT(OR(A12,B12)));
+G0_12 := NOT(NOT(AND(A12,B12)));
+S_optimized12 := ODD(A12,B12,C_optimized12);
+
+P0_13 := NOT(NOT(OR(A13,B13)));
+G0_13 := NOT(NOT(AND(A13,B13)));
+S_optimized13 := ODD(A13,B13,C_optimized13);
+
+P0_14 := NOT(NOT(OR(A14,B14)));
+G0_14 := NOT(NOT(AND(A14,B14)));
+S_optimized14 := ODD(A14,B14,C_optimized14);
+
+P0_15 := NOT(NOT(OR(A15,B15)));
+G0_15 := NOT(NOT(AND(A15,B15)));
+S_optimized15 := ODD(A15,B15,C_optimized15);
+
+P0_16 := NOT(NOT(OR(A16,B16)));
+G0_16 := NOT(NOT(AND(A16,B16)));
+S_optimized16 := ODD(A16,B16,C_optimized16);
+
+P0_17 := NOT(NOT(OR(A17,B17)));
+G0_17 := NOT(NOT(AND(A17,B17)));
+S_optimized17 := ODD(A17,B17,C_optimized17);
+
+P0_18 := NOT(NOT(OR(A18,B18)));
+G0_18 := NOT(NOT(AND(A18,B18)));
+S_optimized18 := ODD(A18,B18,C_optimized18);
+
+P0_19 := NOT(NOT(OR(A19,B19)));
+G0_19 := NOT(NOT(AND(A19,B19)));
+S_optimized19 := ODD(A19,B19,C_optimized19);
+
+P0_20 := NOT(NOT(OR(A20,B20)));
+G0_20 := NOT(NOT(AND(A20,B20)));
+S_optimized20 := ODD(A20,B20,C_optimized20);
+
+P0_21 := NOT(NOT(OR(A21,B21)));
+G0_21 := NOT(NOT(AND(A21,B21)));
+S_optimized21 := ODD(A21,B21,C_optimized21);
+
+P0_22 := NOT(NOT(OR(A22,B22)));
+G0_22 := NOT(NOT(AND(A22,B22)));
+S_optimized22 := ODD(A22,B22,C_optimized22);
+
+P0_23 := NOT(NOT(OR(A23,B23)));
+G0_23 := NOT(NOT(AND(A23,B23)));
+S_optimized23 := ODD(A23,B23,C_optimized23);
+
+P0_24 := NOT(NOT(OR(A24,B24)));
+G0_24 := NOT(NOT(AND(A24,B24)));
+S_optimized24 := ODD(A24,B24,C_optimized24);
+
+P0_25 := NOT(NOT(OR(A25,B25)));
+G0_25 := NOT(NOT(AND(A25,B25)));
+S_optimized25 := ODD(A25,B25,C_optimized25);
+
+P0_26 := NOT(NOT(OR(A26,B26)));
+G0_26 := NOT(NOT(AND(A26,B26)));
+S_optimized26 := ODD(A26,B26,C_optimized26);
+
+P0_27 := NOT(NOT(OR(A27,B27)));
+G0_27 := NOT(NOT(AND(A27,B27)));
+S_optimized27 := ODD(A27,B27,C_optimized27);
+
+P0_28 := NOT(NOT(OR(A28,B28)));
+G0_28 := NOT(NOT(AND(A28,B28)));
+S_optimized28 := ODD(A28,B28,C_optimized28);
+
+P0_29 := NOT(NOT(OR(A29,B29)));
+G0_29 := NOT(NOT(AND(A29,B29)));
+S_optimized29 := ODD(A29,B29,C_optimized29);
+
+P0_30 := NOT(NOT(OR(A30,B30)));
+G0_30 := NOT(NOT(AND(A30,B30)));
+S_optimized30 := ODD(A30,B30,C_optimized30);
+
+P0_31 := NOT(NOT(OR(A31,B31)));
+G0_31 := NOT(NOT(AND(A31,B31)));
+S_optimized31 := ODD(A31,B31,C_optimized31);
+
+
+
+
+P1_0 := NOT(NOT(AND(P0_0,P0_1)));
+G1_0 := NOT(AND(NOT(G0_1),NOT(AND(G0_0,P0_1))));
+C_optimized1 := NOT(AND(NOT(G0_0), NOT(AND(P0_0,C_optimized0))));
+
+P1_1 := NOT(NOT(AND(P0_2,P0_3)));
+G1_1 := NOT(AND(NOT(G0_3),NOT(AND(G0_2,P0_3))));
+C_optimized3 := NOT(AND(NOT(G0_2), NOT(AND(P0_2,C_optimized2))));
+
+P1_2 := NOT(NOT(AND(P0_4,P0_5)));
+G1_2 := NOT(AND(NOT(G0_5),NOT(AND(G0_4,P0_5))));
+C_optimized5 := NOT(AND(NOT(G0_4), NOT(AND(P0_4,C_optimized4))));
+
+P1_3 := NOT(NOT(AND(P0_6,P0_7)));
+G1_3 := NOT(AND(NOT(G0_7),NOT(AND(G0_6,P0_7))));
+C_optimized7 := NOT(AND(NOT(G0_6), NOT(AND(P0_6,C_optimized6))));
+
+P1_4 := NOT(NOT(AND(P0_8,P0_9)));
+G1_4 := NOT(AND(NOT(G0_9),NOT(AND(G0_8,P0_9))));
+C_optimized9 := NOT(AND(NOT(G0_8), NOT(AND(P0_8,C_optimized8))));
+
+P1_5 := NOT(NOT(AND(P0_10,P0_11)));
+G1_5 := NOT(AND(NOT(G0_11),NOT(AND(G0_10,P0_11))));
+C_optimized11 := NOT(AND(NOT(G0_10), NOT(AND(P0_10,C_optimized10))));
+
+P1_6 := NOT(NOT(AND(P0_12,P0_13)));
+G1_6 := NOT(AND(NOT(G0_13),NOT(AND(G0_12,P0_13))));
+C_optimized13 := NOT(AND(NOT(G0_12), NOT(AND(P0_12,C_optimized12))));
+
+P1_7 := NOT(NOT(AND(P0_14,P0_15)));
+G1_7 := NOT(AND(NOT(G0_15),NOT(AND(G0_14,P0_15))));
+C_optimized15 := NOT(AND(NOT(G0_14), NOT(AND(P0_14,C_optimized14))));
+
+P1_8 := NOT(NOT(AND(P0_16,P0_17)));
+G1_8 := NOT(AND(NOT(G0_17),NOT(AND(G0_16,P0_17))));
+C_optimized17 := NOT(AND(NOT(G0_16), NOT(AND(P0_16,C_optimized16))));
+
+P1_9 := NOT(NOT(AND(P0_18,P0_19)));
+G1_9 := NOT(AND(NOT(G0_19),NOT(AND(G0_18,P0_19))));
+C_optimized19 := NOT(AND(NOT(G0_18), NOT(AND(P0_18,C_optimized18))));
+
+P1_10 := NOT(NOT(AND(P0_20,P0_21)));
+G1_10 := NOT(AND(NOT(G0_21),NOT(AND(G0_20,P0_21))));
+C_optimized21 := NOT(AND(NOT(G0_20), NOT(AND(P0_20,C_optimized20))));
+
+P1_11 := NOT(NOT(AND(P0_22,P0_23)));
+G1_11 := NOT(AND(NOT(G0_23),NOT(AND(G0_22,P0_23))));
+C_optimized23 := NOT(AND(NOT(G0_22), NOT(AND(P0_22,C_optimized22))));
+
+P1_12 := NOT(NOT(AND(P0_24,P0_25)));
+G1_12 := NOT(AND(NOT(G0_25),NOT(AND(G0_24,P0_25))));
+C_optimized25 := NOT(AND(NOT(G0_24), NOT(AND(P0_24,C_optimized24))));
+
+P1_13 := NOT(NOT(AND(P0_26,P0_27)));
+G1_13 := NOT(AND(NOT(G0_27),NOT(AND(G0_26,P0_27))));
+C_optimized27 := NOT(AND(NOT(G0_26), NOT(AND(P0_26,C_optimized26))));
+
+P1_14 := NOT(NOT(AND(P0_28,P0_29)));
+G1_14 := NOT(AND(NOT(G0_29),NOT(AND(G0_28,P0_29))));
+C_optimized29 := NOT(AND(NOT(G0_28), NOT(AND(P0_28,C_optimized28))));
+
+P1_15 := NOT(NOT(AND(P0_30,P0_31)));
+G1_15 := NOT(AND(NOT(G0_31),NOT(AND(G0_30,P0_31))));
+C_optimized31 := NOT(AND(NOT(G0_30), NOT(AND(P0_30,C_optimized30))));
+
+
+
+
+P2_0 := NOT(NOT(AND(P1_0,P1_1)));
+G2_0 := NOT(AND(NOT(G1_1),NOT(AND(G1_0,P1_1))));
+C_optimized2 := NOT(AND(NOT(G1_0), NOT(AND(P1_0, C_optimized0))));
+
+P2_1 := NOT(NOT(AND(P1_2,P1_3)));
+G2_1 := NOT(AND(NOT(G1_3),NOT(AND(G1_2,P1_3))));
+C_optimized6 := NOT(AND(NOT(G1_2), NOT(AND(P1_2, C_optimized4))));
+
+P2_2 := NOT(NOT(AND(P1_4,P1_5)));
+G2_2 := NOT(AND(NOT(G1_5),NOT(AND(G1_4,P1_5))));
+C_optimized10 := NOT(AND(NOT(G1_4), NOT(AND(P1_4, C_optimized8))));
+
+P2_3 := NOT(NOT(AND(P1_6,P1_7)));
+G2_3 := NOT(AND(NOT(G1_7),NOT(AND(G1_6,P1_7))));
+C_optimized14 := NOT(AND(NOT(G1_6), NOT(AND(P1_6, C_optimized12))));
+
+P2_4 := NOT(NOT(AND(P1_8,P1_9)));
+G2_4 := NOT(AND(NOT(G1_9),NOT(AND(G1_8,P1_9))));
+C_optimized18 := NOT(AND(NOT(G1_8), NOT(AND(P1_8, C_optimized16))));
+
+P2_5 := NOT(NOT(AND(P1_10,P1_11)));
+G2_5 := NOT(AND(NOT(G1_11),NOT(AND(G1_10,P1_11))));
+C_optimized22 := NOT(AND(NOT(G1_10), NOT(AND(P1_10, C_optimized20))));
+
+P2_6 := NOT(NOT(AND(P1_12,P1_13)));
+G2_6 := NOT(AND(NOT(G1_13),NOT(AND(G1_12,P1_13))));
+C_optimized26 := NOT(AND(NOT(G1_12), NOT(AND(P1_12, C_optimized24))));
+
+P2_7 := NOT(NOT(AND(P1_14,P1_15)));
+G2_7 := NOT(AND(NOT(G1_15),NOT(AND(G1_14,P1_15))));
+C_optimized30 := NOT(AND(NOT(G1_14), NOT(AND(P1_14, C_optimized28))));
+
+
+
+
+P3_0 := NOT(NOT(AND(P2_0,P2_1)));
+G3_0 := NOT(AND(NOT(G2_1),NOT(AND(G2_0,P2_1))));
+C_optimized4 := NOT(AND(NOT(G2_0), NOT(AND(P2_0, C_optimized0))));
+
+P3_1 := NOT(NOT(AND(P2_2,P2_3)));
+G3_1 := NOT(AND(NOT(G2_3),NOT(AND(G2_2,P2_3))));
+C_optimized12 := NOT(AND(NOT(G2_2), NOT(AND(P2_2, C_optimized8))));
+
+P3_2 := NOT(NOT(AND(P2_4,P2_5)));
+G3_2 := NOT(AND(NOT(G2_5),NOT(AND(G2_4,P2_5))));
+C_optimized20 := NOT(AND(NOT(G2_4), NOT(AND(P2_4, C_optimized16))));
+
+P3_3 := NOT(NOT(AND(P2_6,P2_7)));
+G3_3 := NOT(AND(NOT(G2_7),NOT(AND(G2_6,P2_7))));
+C_optimized28 := NOT(AND(NOT(G2_6), NOT(AND(P2_6, C_optimized24))));
+
+
+
+
+P4_0 := NOT(NOT(AND(P3_0,P3_1)));
+G4_0 := NOT(AND(NOT(G3_1),NOT(AND(G3_0,P3_1))));
+C_optimized8 := NOT(AND(NOT(G3_0), NOT(AND(P3_0, C_optimized0))));
+
+P4_1 := NOT(NOT(AND(P3_2,P3_3)));
+G4_1 := NOT(AND(NOT(G3_3),NOT(AND(G3_2,P3_3))));
+C_optimized24 := NOT(AND(NOT(G3_2), NOT(AND(P3_2, C_optimized16))));
+
+
+
+
+P5_0 := NOT(NOT(AND(P4_0,P4_1)));
+G5_0 := NOT(AND(NOT(G4_1),NOT(AND(G4_0,P4_1))));
+C_optimized16 := NOT(AND(NOT(G4_0), NOT(AND(P4_0,OP0))));
+
+
+
+C_optimized0 := (OP0);
+
+
+Z := ODD(S31, S_optimized31);
+ASSIGN Z;

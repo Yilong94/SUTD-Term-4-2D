@@ -1,0 +1,93 @@
+.include "../nominal.jsim"
+.include "../stdcell.jsim"
+.include "checkoff2d/2dcheckoff_3ns.jsim"
+
+
+.subckt boxA_1 a b p g
+Xp_1 a b nor_ab nor2
+Xp_2 nor_ab p inverter
+Xg_1 a b nand_ab nand2
+Xg_2 nand_ab g inverter
+.ends
+
+.subckt boxA_2 a b c s
+Xs_1 a b xor_ab xor2 
+Xs_2 xor_ab c s xor2
+.ends
+
+.subckt boxB g_j1_k p_j1_k g_i_j p_i_j c_i p_i_k g_i_k c_j1_ c_return
+Xng g_i_j ng_i_j inverter
+Xpc p_i_j c_i nandpc nand2
+Xgpc nandpc ng_i_j c_j1_ nand2
+
+Xng_1 g_j1_k ng_j1_k inverter
+Xpg_1 p_j1_k g_i_j nandpg nand2
+Xgpg nandpg ng_j1_k g_i_k nand2
+
+Xpik_1 p_i_j p_j1_k nand_pp nand2
+Xpik_2 nand_pp p_i_k inverter
+.connect c_i c_return
+.ends
+
+.subckt c16_cal p_i_j c_i g_i_j c_j1_ 
+Xng g_i_j ng_i_j inverter
+Xpc p_i_j c_i nandpc nand2
+Xgpc nandpc ng_i_j c_j1_ nand2
+.ends
+
+.subckt nor32 in[31:0] out
+Xnor1 in[7:0] in[15:8] in[23:16] in[31:24] out1_[7:0] nor4
+Xand1 out1_[1:0] out1_[3:2] out1_[5:4] out1_[7:6] out2_[1:0] nand4
+Xand2 out2_[1] out2_[0] out nor2
+.ends
+
+.subckt vcal A[31] B[31] S[31] V
+Xnot1 A[31] NA[31] inverter
+Xnot2 B[31] NB[31] inverter
+Xnot3 S[31] NS[31] inverter
+Xnand1 A[31] B[31] NS[31] ABNS nand3
+Xnand2 NA[31] NB[31] S[31] NANBS nand3
+Xnand3 NANBS ABNS V nand2
+.ends
+
+.subckt adder32 op0 A[31:0] B[31:0] S[31:0] z v n
+
+XinvertB B[31:0] IB[31:0] inverter_2
+
+Xbufferop op0 opb0 buffer_8
+XselB opb0#32 B[31:0] IB[31:0] XB[31:0] mux2
+
+*bottom 16 bits
+Xlayer1 A[31:0] XB[31:0] P[31:0] G[31:0] boxA_1
+Xlayer2 G[15:1:2] P[15:1:2] G[14:0:2] P[14:0:2] C[14:0:2] P_1[7:0] G_1[7:0] C[15:1:2] C[14:0:2] boxB
+Xlayer3 G_1[7:1:2] P_1[7:1:2] G_1[6:0:2] P_1[6:0:2] C[12:0:4] P_2[3:0] G_2[3:0] C[14:2:4] C[12:0:4] boxB
+Xlayer4 G_2[3:1:2] P_2[3:1:2] G_2[2:0:2] P_2[2:0:2] C[8:0:8] P_3[1:0] G_3[1:0] C[12:4:8] C[8:0:8] boxB
+Xlayer5 G_3[1] P_3[1] G_3[0] P_3[0] opb0 P_4[0] G_4[0] C[8] C[0] boxB
+Xreturn A[15:0] XB[15:0] C[15:0] S[15:0] boxA_2
+
+*top 16 bits
+Xc16_cal P[15] C[15] G[15] C[16] c16_cal
+Xlayer2_c G[31:17:2] P[31:17:2] G[30:16:2] P[30:16:2] Cc[30:16:2] P_1[15:8] G_1[15:8] Cc[31:17:2] Cc[30:16:2] boxB
+Xlayer3_c G_1[15:9:2] P_1[15:9:2] G_1[14:8:2] P_1[14:8:2] Cc[28:16:4] P_2[7:4] G_2[7:4] Cc[30:18:4] Cc[28:16:4] boxB
+Xlayer4_c G_2[7:5:2] P_2[7:5:2] G_2[6:4:2] P_2[6:4:2] Cc[24:16:8] P_3[3:2] G_3[3:2] Cc[28:20:8] Cc[24:16:8] boxB
+Xlayer5_c G_3[3] P_3[3] G_3[2] P_3[2] vdd P_4[1] G_4[1] Cc[24] Cc[16] boxB
+Xreturn_c A[31:16] XB[31:16] Cc[31:16] Sc[31:16] boxA_2
+
+
+Xbuffercb C[16] cb16 buffer_8
+Xlayer2_nc G[31:17:2] P[31:17:2] G[30:16:2] P[30:16:2] Cnc[30:16:2] P_1n[15:8] G_1n[15:8] Cnc[31:17:2] Cnc[30:16:2] boxB
+Xlayer3_nc G_1n[15:9:2] P_1n[15:9:2] G_1n[14:8:2] P_1n[14:8:2] Cnc[28:16:4] P_2n[7:4] G_2n[7:4] Cnc[30:18:4] Cnc[28:16:4] boxB
+Xlayer4_nc G_2n[7:5:2] P_2n[7:5:2] G_2n[6:4:2] P_2n[6:4:2] Cnc[24:16:8] P_3n[3:2] G_3n[3:2] Cnc[28:20:8] Cnc[24:16:8] boxB
+Xlayer5_nc G_3n[3] P_3n[3] G_3n[2] P_3n[2] 0 P_4n[1] G_4n[1] Cnc[24] Cnc[16] boxB
+Xreturn_nc A[31:16] XB[31:16] Cnc[31:16] Snc[31:16] boxA_2
+Xmuxcarry cb16#16 Snc[31:16] Sc[31:16] S[31:16]  mux2
+
+*z
+Xzcal S[31:0] z nor32
+
+*n
+.connect S[31] n
+*v
+Xval A[31] XB[31] S[31] v vcal
+.ends
+
