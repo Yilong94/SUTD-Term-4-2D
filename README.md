@@ -2,7 +2,7 @@
 
 2D Project on (1) 32-bit adder optimization and (2) translating netlist to CNF
 
-Part 1: 32-bit adder optimization
+**Part 1: 32-bit adder optimization**
 
 optimized1.jsim contains the optimized 32-bit adder. It is optimized via:
   * Carry-select and carry-lookahead adder architecture
@@ -10,9 +10,9 @@ optimized1.jsim contains the optimized 32-bit adder. It is optimized via:
   * Use buffers to reduce load-dependent delays
   * Minimize delays along critical paths
 
-Timing:**2.23ns**
+Timing: **2.23ns**
 
-Part 2: Translating netlist to CNF
+**Part 2: Translating netlist to CNF**
 
 This is the general flow: 
 1. Write a python script to generate boolean expression in BC file format  
